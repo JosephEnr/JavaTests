@@ -1,0 +1,44 @@
+import random
+play = input("Wanna play?(Yes/No): ")
+while play == "Yes" or play == "yes":
+  your_play = input("\nRock, Paper, or Scissors: ")
+
+  bot = int(round(random.uniform(1,3)))
+
+  if bot == 1 and your_play == "Paper":
+    print("\nI picked Rock")
+    print("\nCongrats, You win")
+  elif bot == 1 and your_play == "Scissors":
+    print("\nI picked Rock")
+    print("\nIm too good")
+  elif bot == 1 and your_play == "Rock":
+    print("\nI also picked Rock")
+    print("\nDarn, a tie")
+
+  if bot == 2 and your_play == "Scissors":
+    print("\nI picked Paper")
+    print("\nCongrats, You win")
+  elif bot == 2 and your_play == "Rock":
+    print("\nI picked Paper")
+    print("\nIm too good")
+  elif bot == 2 and your_play == "Paper":
+    print("\nI picked Paper")
+    print("\nDarn, a tie")
+
+  if bot == 3 and your_play == "Rock":
+    print("\nI picked Scissors")
+    print("\nCongrats, You win")
+  elif bot == 3 and your_play == "Paper":
+    print("\nI picked Scissors")
+    print("\nIm too good")
+  elif bot == 3 and your_play == "Scissors":
+    print("\nI picked Scissors")
+    print("\nDarn, a tie")
+  
+  play = input("\nPlay again?(Yes/No): ")
+if play == "No":
+  print("\nAwww :\'(\'")
+  exit("Play again?")
+else:
+  print("\nuhhhhh")
+  exit("Play again?")
